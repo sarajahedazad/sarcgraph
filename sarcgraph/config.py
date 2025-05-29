@@ -137,7 +137,9 @@ class Config:
 
     @sigma.setter
     def sigma(self, value: float):
-        if not isinstance(value, float):
+        if isinstance(value, int):
+            value = float(value)
+        elif not isinstance(value, float):
             raise TypeError("sigma must be a float")
         if value <= 0.0:
             raise ValueError("sigma must be greater than 0.0")
@@ -152,7 +154,7 @@ class Config:
         if not isinstance(value, int):
             raise TypeError("zdisc_min_length must be an integer")
         if value <= 2:
-            raise ValueError("zdisc_min_length must be greater than 2")
+            raise ValueError("zdisc_min_length must be greater than 3")
         self._zdisc_min_length = value
 
     @property
@@ -221,7 +223,9 @@ class Config:
 
     @avg_sarc_length.setter
     def avg_sarc_length(self, value: float):
-        if not isinstance(value, float):
+        if isinstance(value, int):
+            value = float(value)
+        elif not isinstance(value, float):
             raise TypeError("avg_sarc_length must be a float")
         if (
             value < 1.0
@@ -240,7 +244,9 @@ class Config:
 
     @min_sarc_length.setter
     def min_sarc_length(self, value: float):
-        if not isinstance(value, float):
+        if isinstance(value, int):
+            value = float(value)
+        elif not isinstance(value, float):
             raise TypeError("min_sarc_length must be a float")
         if value >= self.avg_sarc_length:
             raise ValueError(
@@ -254,7 +260,9 @@ class Config:
 
     @max_sarc_length.setter
     def max_sarc_length(self, value: float):
-        if not isinstance(value, float):
+        if isinstance(value, int):
+            value = float(value)
+        elif not isinstance(value, float):
             raise TypeError("max_sarc_length must be a float")
         if value <= self.avg_sarc_length:
             raise ValueError(
