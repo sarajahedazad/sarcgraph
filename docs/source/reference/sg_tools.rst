@@ -1,27 +1,28 @@
 .. currentmodule:: sarcgraph.sg_tools
 
-.. _sg_tools.sarcgraphtools:
+SarcGraphTools Utility Class
+============================
 
+.. autoclass:: sarcgraph.sg_tools.SarcGraphTools
+   :members:
+   :exclude-members: TimeSeries, Visualization, Analysis
+   :show-inheritance:
 
-Analysis (:class:`SarcGraphTools`)
-==================================
+Submodules
+----------
 
-Provides tools to analyze detected zdiscs and sarcomeres.
+.. autoclass:: sarcgraph.sg_tools.SarcGraphTools.TimeSeries
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-Parent Class
-++++++++++++
+.. autoclass:: sarcgraph.sg_tools.SarcGraphTools.Visualization
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-.. autosummary::
-   :toctree: generated/
+.. autoclass:: sarcgraph.sg_tools.SarcGraphTools.Analysis
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-   ~SarcGraphTools
-
-Inner Classes
-+++++++++++++
-
-.. autosummary::
-   :toctree: generated/
-
-   ~SarcGraphTools.TimeSeries
-   ~SarcGraphTools.Visualization
-   ~SarcGraphTools.Analysis

@@ -106,6 +106,7 @@ pip install -e .
 |                |___ __init__.py
 |                |___ sg.py
 |                |___ sg_tools.py
+|                |___ config.py
 |        |___ tests/
 |        |___ tutorials/
 |                |___ *.ipynb

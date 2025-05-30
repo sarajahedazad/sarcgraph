@@ -8,6 +8,8 @@ import sys
 
 sys.path.insert(0, os.path.abspath("../../"))
 
+import sarcgraph
+
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
@@ -15,7 +17,7 @@ project = "SarcGraph"
 license_file = "LICENSE"
 copyright = "2023, Saeed Mohammadzadeh"
 author = "Saeed Mohammadzadeh"
-release = "0.2.1"
+release = sarcgraph.__version__
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -55,7 +57,9 @@ display_version = False
 # Autodoc
 # -----------------------------------------------------------------------------
 autodoc_default_options = {
+    "members": None,
     "inherited-members": None,
+    "undoc-members": None,
 }
 autodoc_member_order = "bysource"
 autoclass_content = "init"
@@ -65,4 +69,4 @@ napoleon_use_admonition_for_notes = False
 # -----------------------------------------------------------------------------
 # Autosummary
 # -----------------------------------------------------------------------------
-autosummary_generate = False
+autosummary_generate = True

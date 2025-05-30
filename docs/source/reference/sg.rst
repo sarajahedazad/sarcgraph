@@ -1,47 +1,18 @@
 .. currentmodule:: sarcgraph.sg
 
-.. _sg.sarcgraph:
-
-*******************************************
-Detection and Tracking (:class:`SarcGraph`)
-*******************************************
-
-Provides tools to detect and track zdiscs and sarcomeres.
-
-Parent Class
-============
-
-.. autosummary::
-   :toctree: generated/
-
-   ~SarcGraph
-
-Methods
-=======
-
-.. autosummary::
-   :toctree: generated/
-
-   ~SarcGraph.zdisc_segmentation
-   ~SarcGraph.zdisc_tracking
-   ~SarcGraph.sarcomere_detection
-
-Private Methods
+SarcGraph Class
 ===============
 
-.. autosummary::
-   :toctree: generated/
+Public Methods
+--------------
 
-   ~SarcGraph._data_loader
-   ~SarcGraph._to_gray
-   ~SarcGraph._save_numpy
-   ~SarcGraph._save_dataframe
-   ~SarcGraph._filter_frames
-   ~SarcGraph._process_input
-   ~SarcGraph._detect_contours
-   ~SarcGraph._process_contour
-   ~SarcGraph._zdiscs_to_pandas
-   ~SarcGraph._merge_tracked_zdiscs
-   ~SarcGraph._zdisc_to_graph
-   ~SarcGraph._score_graph
-   ~SarcGraph._prune_graph
+.. autoclass:: SarcGraph
+   :members:
+   :exclude-members: _update_config, _create_output_dir, _pop_kwargs, _check_validity, _detect_contours, _validate_contours, _find_frame_contours, _process_contours, _zdisc_center, _zdisc_endpoints, _merge_tracked_zdiscs, _zdisc_to_graph, _graph_initialization, _find_nearest_neighbors, _add_edges, _score_graph, _sarc_vector, _length_score, _sarcs_angle, _angle_score, _sarc_score, _prune_graph, _get_connected_zdiscs, _initialize_sarc, _process_sarc, _process_sarcomeres
+   :show-inheritance:
+
+Private Methods
+---------------
+
+.. autoclass:: SarcGraph
+   :members: _update_config, _create_output_dir, _pop_kwargs, _check_validity, _detect_contours, _validate_contours, _find_frame_contours, _process_contours, _zdisc_center, _zdisc_endpoints, _merge_tracked_zdiscs, _zdisc_to_graph, _graph_initialization, _find_nearest_neighbors, _add_edges, _score_graph, _sarc_vector, _length_score, _sarcs_angle, _angle_score, _sarc_score, _prune_graph, _get_connected_zdiscs, _initialize_sarc, _process_sarc, _process_sarcomeres

@@ -1,6 +1,6 @@
 package:
     name: sarcgraph
-    version: 0.2.1
+    version: 0.3.0
 
 source:
     path: ../
@@ -52,3 +52,5 @@ about:
 extra:
     recipe-maintainers:
         - saeedmhz
+    channels:
+        - conda-forge
